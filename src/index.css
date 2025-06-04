@@ -12,20 +12,19 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  
   min-height: 100vh;
 }
-.f-inter{
-   font-family: "Inter", sans-serif;
-}
-.f-openSans{
-   font-family: "Open Sans", sans-serif;
+
+.f-inter {
+  font-family: "Inter", sans-serif;
 }
 
+.f-openSans {
+  font-family: "Open Sans", sans-serif;
+}
 
 .chakra-tabs__tab--selected {
   background-color: #3182ce !important;
   color: white !important;
   font-weight: bold !important;
 }
-
