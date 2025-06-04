@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+.f-inter{
+   font-family: "Inter", sans-serif;
+}
+.scroll-container {
+  position: relative;
+  max-height: 300px; /* or any height */
+  overflow: auto;
+  scrollbar-gutter: stable; /* avoids content shift in supporting browsers */
+  scrollbar-width: none;
+}
+
+.scroll-container:hover {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(160, 160, 160, 0.7) transparent;
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 0px;
+}
+
+.scroll-container:hover::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: rgba(160, 160, 160, 0.7);
+  border-radius: 4px;
+}
