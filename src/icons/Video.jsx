@@ -1,6 +1,6 @@
 import React from 'react';
 
-const VideoIcon = ({ size = 40, color = '#A0A0A0', className = '' }) => {
+const VideoIcon = ({ size = 25, color = '#A0A0A0', className = '' }) => {
   return (
     <svg
       width={size}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DotsVerticalIcon = ({ size = 40, color = '#A0A0A0', className = '' }) => {
+const DotsVerticalIcon = ({ size = 25, color = '#A0A0A0', className = '' }) => {
   return (
     <svg
       width={size}

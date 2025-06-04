@@ -12,34 +12,20 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  
   min-height: 100vh;
 }
 .f-inter{
    font-family: "Inter", sans-serif;
 }
-.scroll-container {
-  position: relative;
-  max-height: 300px; /* or any height */
-  overflow: auto;
-  scrollbar-gutter: stable; /* avoids content shift in supporting browsers */
-  scrollbar-width: none;
+.f-openSans{
+   font-family: "Open Sans", sans-serif;
 }
 
-.scroll-container:hover {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(160, 160, 160, 0.7) transparent;
+
+.chakra-tabs__tab--selected {
+  background-color: #3182ce !important;
+  color: white !important;
+  font-weight: bold !important;
 }
 
-.scroll-container::-webkit-scrollbar {
-  width: 0px;
-}
-
-.scroll-container:hover::-webkit-scrollbar {
-  width: 8px;
-}
-
-.scroll-container::-webkit-scrollbar-thumb {
-  background-color: rgba(160, 160, 160, 0.7);
-  border-radius: 4px;
-}
