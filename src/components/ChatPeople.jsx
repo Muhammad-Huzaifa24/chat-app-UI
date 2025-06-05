@@ -60,7 +60,7 @@ const ChatPeople = () => {
               className="w-full focus:outline-0 focus:border-none focus:ring-0 f-inter text-base text-[#ABAFB199]"
             />
           </div>
-          <div role="add-contact-button" className="p-3 bg-[#00A3FF] rounded-xl cursor-pointer" onClick={menuDisclosure.onOpen}>
+          <div role="add-contact-button" className="p-3 bg-[#00A3FF] rounded-xl cursor-pointer" onClick={modalDisclosure.onOpen}>
             <IoIosAdd className="size-6 text-[#FFFFFF]" />
           </div>
         </div>
