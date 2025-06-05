@@ -6,12 +6,15 @@ import { IoIosAdd } from "react-icons/io";
 import { CiMenuKebab } from "react-icons/ci";
 import { data } from "../data";
 import AddContactModal from "./chakra-ui/Modal";
-import { useDisclosure } from '@chakra-ui/react';
+import { useDisclosure } from '@chakra-ui/react'; // for modal
+import MainMenu from "../components/chakra-ui/Menu"
 
 
 
 const ChatPeople = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  // const { isOpen, onOpen, onClose } = useDisclosure(); // for modal
+  const modalDisclosure = useDisclosure(); // for modal
+  const menuDisclosure = useDisclosure();  // for menu
   const [searchTerm, setSearchTerm] = useState("");
   // Filter and sort data based on search term
   const filteredData = useMemo(() => {
@@ -42,7 +45,8 @@ const ChatPeople = () => {
           <ChatAppIcon />
           <span className='f-inter font-semibold text-[22px] text-[#00A3FF] grow-1'>Chat Buddies</span>
           <div className="md:hidden block">
-            <CiMenuKebab className=" text-[#00A3FF] size-7" />
+            <MainMenu
+          />
           </div>
         </div>
         <div role="search-and-add-contact" className="w-full mt-6.5 px-6 mb-7 flex items-center gap-3">
@@ -56,7 +60,7 @@ const ChatPeople = () => {
               className="w-full focus:outline-0 focus:border-none focus:ring-0 f-inter text-base text-[#ABAFB199]"
             />
           </div>
-          <div role="add-contact-button" className="p-3 bg-[#00A3FF] rounded-xl cursor-pointer" onClick={onOpen}>
+          <div role="add-contact-button" className="p-3 bg-[#00A3FF] rounded-xl cursor-pointer" onClick={menuDisclosure.onOpen}>
             <IoIosAdd className="size-6 text-[#FFFFFF]" />
           </div>
         </div>
@@ -66,7 +70,11 @@ const ChatPeople = () => {
           />
         </div>
       </div>
-      {<AddContactModal isOpen={isOpen} onClose={onClose} />}
+
+      <AddContactModal
+        isOpen={modalDisclosure.isOpen}
+        onClose={modalDisclosure.onClose}
+      />
     </>
   )
 }
