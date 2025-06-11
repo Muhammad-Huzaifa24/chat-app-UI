@@ -49,8 +49,8 @@ const ChatPeople = () => {
           />
           </div>
         </div>
-        <div role="search-and-add-contact" className="w-full mt-6.5 px-6 mb-7 flex items-center gap-3">
-          <div role="search-field" className="w-full flex items-center gap-2.5 shadow-[inset_0_0_0_1px_#CCCFD0]  rounded-xl px-3.5 py-3">
+        <div role="search-and-add-contact" className="w-full  mt-6.5 px-6 mb-7 flex items-center gap-3">
+          <div role="search-field" className="w-full flex items-center gap-2.5 shadow-[inset_0_0_0_1px_#CCCFD0]  rounded-full sm:rounded-xl px-3.5 py-3">
             <IoIosSearch className="size-6 text-[#ABAFB199]" />
             <input
               type="text"
@@ -60,8 +60,8 @@ const ChatPeople = () => {
               className="w-full focus:outline-0 focus:border-none focus:ring-0 f-inter text-base text-[#ABAFB199]"
             />
           </div>
-          <div role="add-contact-button" className="p-3 bg-[#00A3FF] rounded-xl cursor-pointer" onClick={modalDisclosure.onOpen}>
-            <IoIosAdd className="size-6 text-[#FFFFFF]" />
+          <div role="add-contact-button" className="p-5 sm:p-3 bg-[#00A3FF] rounded-full absolute bottom-5 right-5 sm:relative sm:bottom-auto sm:right-auto sm:rounded-xl cursor-pointer shadow-lg z-50 sm:shadow-none" onClick={modalDisclosure.onOpen}>
+            <IoIosAdd className="size-6 text-[#FFFFFF] " />
           </div>
         </div>
         <div className="border flex-grow overflow-hidden p-0">

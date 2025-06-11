@@ -17,8 +17,13 @@ const AddContactModal = ({ isOpen, onClose }) => {
     return (
         <Modal isOpen={isOpen} onClose={onClose} isCentered>
             <ModalOverlay />
-            <ModalContent borderRadius="lg" px={4} py={2}>
-                <ModalHeader>
+<ModalContent
+    borderRadius="lg"
+    px={{ base: 4, sm: 6 }}
+    py={2}
+    mx={{ base: 6, sm: 'auto' }}
+    my={{ base: 6, sm: 'auto' }}
+  >                <ModalHeader>
                     <div className="flex  items-center justify-center gap-3 mt-4" >
                         <IoMdPersonAdd size={30} color="#00A3FF" />
                         <span className="text-2xl font-semibold text-black f-inter">Add Contact</span>
