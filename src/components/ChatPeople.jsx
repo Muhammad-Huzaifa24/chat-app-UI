@@ -46,7 +46,7 @@ const ChatPeople = () => {
           <span className='f-inter font-semibold text-[22px] text-[#00A3FF] grow-1'>Chat Buddies</span>
           <div className="md:hidden block">
             <MainMenu
-          />
+            />
           </div>
         </div>
         <div role="search-and-add-contact" className="w-full  mt-6.5 px-3 sm:px-6 mb-7 flex items-center gap-3">
@@ -60,7 +60,11 @@ const ChatPeople = () => {
               className="w-full focus:outline-0 focus:border-none focus:ring-0 f-inter text-base text-[#ABAFB199]"
             />
           </div>
-          <div role="add-contact-button" className="p-5 sm:p-3 bg-[#00A3FF] rounded-full absolute bottom-13 right-5 sm:relative sm:bottom-auto sm:right-auto sm:rounded-xl cursor-pointer shadow-lg z-50 sm:shadow-none" onClick={modalDisclosure.onOpen}>
+          <div
+            role="add-contact-button"
+            className="p-5 sm:p-3 bg-[#00A3FF] rounded-full absolute bottom-18 right-5 sm:relative sm:bottom-auto sm:right-auto sm:rounded-xl cursor-pointer shadow-2xl z-50 sm:shadow-none"
+            onClick={modalDisclosure.onOpen}
+          >
             <IoIosAdd className="size-6 text-[#FFFFFF] " />
           </div>
         </div>

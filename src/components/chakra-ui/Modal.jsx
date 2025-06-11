@@ -19,46 +19,64 @@ const AddContactModal = ({ isOpen, onClose }) => {
             <ModalOverlay />
             <ModalContent
                 borderRadius="lg"
-                px={{ base: 4, sm: 6 }}
-                py={2}
+                px={{ base: 1, sm: 6 }}
+                py={6}
                 mx={{ base: 6, sm: 'auto' }}
                 my={{ base: 6, sm: 'auto' }}
-            >                <ModalHeader>
-                    <div className="flex  items-center justify-center gap-3 mt-4" >
+            >
+                <ModalHeader mb={2}>
+                    <div className="flex items-center justify-center gap-3 mt-4" >
                         <IoMdPersonAdd size={30} color="#00A3FF" />
-                        <span className="text-2xl font-semibold text-black f-inter">Add Contact</span>
+                        <span className="text-2xl font-semibold text-black f-openSans">Add Contact</span>
                     </div>
                 </ModalHeader>
 
                 <ModalCloseButton />
                 <ModalBody pb={4}>
-                    <FormControl mb={4}>
-                        <FormLabel fontWeight="medium" color="black">Name</FormLabel>
+                    <FormControl mb={8}>
+                        {/* <FormLabel fontWeight="medium" color="black">Name</FormLabel> */}
                         <Input
                             placeholder="Enter name"
                             borderColor="#00A3FF"
                             focusBorderColor="#00A3FF"
                             _placeholder={{ color: "gray.400" }}
+                            variant="flushed"
                         />
                     </FormControl>
 
                     <FormControl>
-                        <FormLabel fontWeight="medium" color="black">Phone</FormLabel>
+                        {/* <FormLabel fontWeight="medium" color="black">Phone</FormLabel> */}
                         <Input
                             placeholder="Enter phone number"
                             borderColor="#00A3FF"
                             focusBorderColor="#00A3FF"
                             _placeholder={{ color: "gray.400" }}
+                            variant="flushed"
                         />
                     </FormControl>
                 </ModalBody>
 
-                <ModalFooter>
-                    <Button variant="ghost" mr={3} onClick={onClose} color="black" border="1px solid #00A3FF">
-                        Cancel
-                    </Button>
-                    <Button bg="#00A3FF" color="white" _hover={{ bg: "#008DD6" }}>
+                <ModalFooter gap={'4'} mt={2}>
+
+                    <Button
+                        width={'full'}
+                        bg="#00A3FF"
+                        color="white"
+                        _hover={{ bg: "#008DD6" }}
+                        variant={'solid'}
+                        rounded={'full'}
+                    >
                         Add
+                    </Button>
+                    <Button
+                        variant="ghost"
+                        onClick={onClose}
+                        color="black"
+                        border="1px solid #00A3FF"
+                        width={'full'}
+                        rounded={'full'}
+                    >
+                        Cancel
                     </Button>
                 </ModalFooter>
             </ModalContent>

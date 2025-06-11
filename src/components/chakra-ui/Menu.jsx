@@ -25,13 +25,13 @@ const MainMenu = ({ isOpen, onOpen, onClose }) => {
         size="lg"
         colorScheme="blue"
         // color="#00A3FF"
-        className="md:hidden "
+        className="md:hidden"
         rounded={'full'}
       />
       <Portal>
-        <MenuList rounded={'lg'} width={"-webkit-fit-content"} position={'relative'} right={3} >
+        <MenuList rounded={'lg'} position={'relative'} right={3} >
           <MenuItem
-            py={4}
+            py={3}
             px={4}
             color="#00A3FF"
             onClick={onClose}
@@ -39,16 +39,19 @@ const MainMenu = ({ isOpen, onOpen, onClose }) => {
             fontSize={'md'}
             fontFamily={'Open sans'}
             bg={'transparent'}
+            borderBottom={'1px'}
+            borderColor={'gray.200'}
+            
           >
             Settings
           </MenuItem>
           <MenuItem
-            py={4}
+            py={3}
             px={4}
             color="#00A3FF"
             icon={<FiLogOut size={25} />}
             onClick={onClose}
-            fontSize={'xs'}
+            fontSize={'md'}
             fontFamily={'Open sans'}
             bg={'transparent'}
           >
