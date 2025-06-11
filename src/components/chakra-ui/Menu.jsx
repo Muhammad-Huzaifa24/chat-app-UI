@@ -15,7 +15,7 @@ const MainMenu = ({ isOpen, onOpen, onClose }) => {
       isOpen={isOpen}
       onOpen={onOpen}
       onClose={onClose}
-      
+
     >
       <MenuButton
         as={IconButton}
@@ -36,8 +36,9 @@ const MainMenu = ({ isOpen, onOpen, onClose }) => {
             color="#00A3FF"
             onClick={onClose}
             icon={<CiSettings size={25} />}
-            fontSize={'lg'}
+            fontSize={'md'}
             fontFamily={'Open sans'}
+            bg={'transparent'}
           >
             Settings
           </MenuItem>
@@ -47,8 +48,9 @@ const MainMenu = ({ isOpen, onOpen, onClose }) => {
             color="#00A3FF"
             icon={<FiLogOut size={25} />}
             onClick={onClose}
-            fontSize={'lg'}
+            fontSize={'xs'}
             fontFamily={'Open sans'}
+            bg={'transparent'}
           >
             Logout
           </MenuItem>
