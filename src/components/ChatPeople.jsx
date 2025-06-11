@@ -41,7 +41,7 @@ const ChatPeople = () => {
   return (
     <>
       <div className='md:w-2/5 w-full  h-screen overflow-auto bg-[#FFFFFF] shadow-[inset_0_0_0_1px_rgba(94,94,94,0.2)] flex flex-col'>
-        <div role="logo-and-text" className="flex px-6 py-5 items-center gap-3.5">
+        <div role="logo-and-text" className="flex pl-6 pr-1 sm:px-6 py-5 items-center gap-3.5">
           <ChatAppIcon />
           <span className='f-inter font-semibold text-[22px] text-[#00A3FF] grow-1'>Chat Buddies</span>
           <div className="md:hidden block">
@@ -49,7 +49,7 @@ const ChatPeople = () => {
           />
           </div>
         </div>
-        <div role="search-and-add-contact" className="w-full  mt-6.5 px-6 mb-7 flex items-center gap-3">
+        <div role="search-and-add-contact" className="w-full  mt-6.5 px-3 sm:px-6 mb-7 flex items-center gap-3">
           <div role="search-field" className="w-full flex items-center gap-2.5 shadow-[inset_0_0_0_1px_#CCCFD0]  rounded-full sm:rounded-xl px-3.5 py-3">
             <IoIosSearch className="size-6 text-[#ABAFB199]" />
             <input

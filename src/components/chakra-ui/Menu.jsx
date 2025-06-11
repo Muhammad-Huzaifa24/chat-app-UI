@@ -25,10 +25,12 @@ const MainMenu = ({ isOpen, onOpen, onClose }) => {
         colorScheme="blue"
         // color="#00A3FF"
         className="md:hidden "
+        rounded={'full'}
       />
       <Portal>
-        <MenuList>
+        <MenuList rounded={'lg'} >
             <MenuItem 
+            py={3}
                 color="#00A3FF" 
                 onClick={onClose}
                 icon={<CiSettings size={20}/>}
@@ -36,6 +38,7 @@ const MainMenu = ({ isOpen, onOpen, onClose }) => {
                 Settings
             </MenuItem>
             <MenuItem 
+            py={3}
                 color="#00A3FF" 
                 icon={<FiLogOut size={20}/>}  
                 onClick={onClose}
