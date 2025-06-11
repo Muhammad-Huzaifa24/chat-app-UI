@@ -38,7 +38,7 @@ const TabComponent = ({
 
   return (
     <Tabs
-      variant="enclosed"
+      variant="soft-rounded"
       isFitted
       className="px-3 py-1"
       display="flex"
@@ -60,9 +60,20 @@ const TabComponent = ({
 
       }}
     >
-      <TabList className="bg-[#f0f4f8]  px-2 py-2" flexShrink={0}>
-        <Tab color="#00A3FF" _selected={{ bg: "#00A3FF", color: "white", fontWeight: "bold", borderRadius: '100px' }} className="flex items-center gap-2 f-inter"><LuMessageSquareText />All</Tab>
-        <Tab color="#00A3FF" _selected={{ bg: "#00A3FF", color: "white", fontWeight: "bold", borderRadius: '100px' }} className="flex items-center gap-2 f-inter"><RiPushpinFill />Pinned</Tab>
+      <TabList
+        className=" px-2 py-2" flexShrink={0}>
+        <Tab color="#00A3FF"
+          _selected={{ bg: "#00A3FF", color: "white", fontWeight: "bold", borderRadius: '100px' }}
+          className="flex items-center gap-2 f-inter">
+          <LuMessageSquareText />
+          All
+        </Tab>
+        <Tab
+          color="#00A3FF"
+          _selected={{ bg: "#00A3FF", color: "white", fontWeight: "bold", borderRadius: '100px' }}
+          className="flex items-center gap-2 f-inter">
+          <RiPushpinFill />Pinned
+        </Tab>
 
       </TabList>
 
