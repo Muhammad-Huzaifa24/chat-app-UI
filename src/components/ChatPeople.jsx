@@ -60,7 +60,7 @@ const ChatPeople = () => {
               className="w-full focus:outline-0 focus:border-none focus:ring-0 f-inter text-base text-[#ABAFB199]"
             />
           </div>
-          <div role="add-contact-button" className="p-5 sm:p-3 bg-[#00A3FF] rounded-full absolute bottom-5 right-5 sm:relative sm:bottom-auto sm:right-auto sm:rounded-xl cursor-pointer shadow-lg z-50 sm:shadow-none" onClick={modalDisclosure.onOpen}>
+          <div role="add-contact-button" className="p-5 sm:p-3 bg-[#00A3FF] rounded-full absolute bottom-10 right-5 sm:relative sm:bottom-auto sm:right-auto sm:rounded-xl cursor-pointer shadow-lg z-50 sm:shadow-none" onClick={modalDisclosure.onOpen}>
             <IoIosAdd className="size-6 text-[#FFFFFF] " />
           </div>
         </div>

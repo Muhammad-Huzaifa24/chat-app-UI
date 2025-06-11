@@ -15,6 +15,7 @@ const MainMenu = ({ isOpen, onOpen, onClose }) => {
       isOpen={isOpen}
       onOpen={onOpen}
       onClose={onClose}
+      
     >
       <MenuButton
         as={IconButton}
@@ -30,20 +31,24 @@ const MainMenu = ({ isOpen, onOpen, onClose }) => {
       <Portal>
         <MenuList rounded={'lg'} width={"-webkit-fit-content"} position={'relative'} right={3} >
           <MenuItem
-            py={6}
+            py={4}
             px={4}
             color="#00A3FF"
             onClick={onClose}
-            icon={<CiSettings size={20} />}
+            icon={<CiSettings size={25} />}
+            fontSize={'lg'}
+            fontFamily={'Open sans'}
           >
             Settings
-        </MenuItem>
+          </MenuItem>
           <MenuItem
-            py={6}
+            py={4}
             px={4}
             color="#00A3FF"
-            icon={<FiLogOut size={20} />}
+            icon={<FiLogOut size={25} />}
             onClick={onClose}
+            fontSize={'lg'}
+            fontFamily={'Open sans'}
           >
             Logout
           </MenuItem>
