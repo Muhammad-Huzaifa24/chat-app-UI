@@ -40,7 +40,7 @@ const ChatPeople = () => {
 
   return (
     <>
-      <div className='md:w-2/5 w-full  h-screen overflow-auto bg-[#FFFFFF] shadow-[inset_0_0_0_1px_rgba(94,94,94,0.2)] flex flex-col'>
+      <div className='h-screen w-full overflow-auto bg-[#FFFFFF] shadow-[inset_0_0_0_1px_rgba(94,94,94,0.2)] flex flex-col'>
         <div role="logo-and-text" className="flex pl-6 pr-1 sm:px-6 py-5 items-center gap-3.5">
           <ChatAppIcon />
           <span className='f-inter font-semibold text-[22px] text-[#00A3FF] grow-1'>Chat Buddies</span>

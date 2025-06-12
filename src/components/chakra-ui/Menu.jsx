@@ -29,7 +29,7 @@ const MainMenu = ({ isOpen, onOpen, onClose }) => {
         rounded={'full'}
       />
       <Portal>
-        <MenuList rounded={'lg'} position={'relative'} right={3} >
+        <MenuList rounded={'2xl'} position={'relative'} right={3} >
           <MenuItem
             py={3}
             px={4}

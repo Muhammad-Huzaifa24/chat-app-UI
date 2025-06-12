@@ -38,9 +38,9 @@ const TabComponent = ({
 
   return (
     <Tabs
-      variant="soft-rounded"
+      variant=""
       isFitted
-      className="px-3 py-1"
+      className="px-0 py-1"
       display="flex"
       flexDirection="column"
       height="100%"
@@ -61,16 +61,16 @@ const TabComponent = ({
       }}
     >
       <TabList
-        className=" px-2 py-2" flexShrink={0}>
+        className=" px-3 py-2" flexShrink={0}>
         <Tab color="#00A3FF"
-          _selected={{ bg: "#00A3FF", color: "white", fontWeight: "bold", borderRadius: '100px' }}
+          _selected={{fontWeight: "bold", borderBottom:'2px solid #00A3FF' }}
           className="flex items-center gap-2 f-inter">
           <LuMessageSquareText />
           All
         </Tab>
         <Tab
           color="#00A3FF"
-          _selected={{ bg: "#00A3FF", color: "white", fontWeight: "bold", borderRadius: '100px' }}
+          _selected={{ fontWeight: "bold",borderBottom:'2px solid #00A3FF' }}
           className="flex items-center gap-2 f-inter">
           <RiPushpinFill />Pinned
         </Tab>
@@ -107,7 +107,7 @@ const TabComponent = ({
             {data?.map((item, index) => (
               <div
                 key={index}
-                className={`cursor-pointer border-b-amber-300 px-1 py-3 flex gap-4 ${chatClick === index
+                className={`cursor-pointer border-b-amber-300 px-3 py-3 flex gap-4 ${chatClick === index
                   ? "bg-[#00A3FF]/15 shadow-[inset_0_1px_0_rgba(0,163,255,0.2),inset_0_-1px_0_rgba(0,163,255,0.2)] "
                   : ""
                   }`}
@@ -143,7 +143,7 @@ const TabComponent = ({
             {data?.map((item, index) => (
               <div
                 key={index}
-                className={`cursor-pointer px-1 py-3 flex gap-4 ${pinChatClick === index
+                className={`cursor-pointer px-3 py-3 flex gap-4 ${pinChatClick === index
                   ? "bg-[#00A3FF]/15 shadow-[inset_0_1px_0_rgba(0,163,255,0.2),inset_0_-1px_0_rgba(0,163,255,0.2)]"
                   : ""
                   }`}
