@@ -107,8 +107,8 @@ const TabComponent = ({
             {data?.map((item, index) => (
               <div
                 key={index}
-                className={`cursor-pointer border-b-amber-300 px-3 py-3 flex gap-4 ${chatClick === index
-                  ? "bg-[#00A3FF]/15 shadow-[inset_0_1px_0_rgba(0,163,255,0.2),inset_0_-1px_0_rgba(0,163,255,0.2)] "
+                className={`cursor-pointer px-3 py-3 flex gap-4 ${chatClick === index
+                  ? "md:bg-[#00A3FF]/15 md:shadow-[inset_0_1px_0_rgba(0,163,255,0.2),inset_0_-1px_0_rgba(0,163,255,0.2)] "
                   : ""
                   }`}
                 onClick={() => handleChatClick(item, index, "all")}
@@ -144,7 +144,7 @@ const TabComponent = ({
               <div
                 key={index}
                 className={`cursor-pointer px-3 py-3 flex gap-4 ${pinChatClick === index
-                  ? "bg-[#00A3FF]/15 shadow-[inset_0_1px_0_rgba(0,163,255,0.2),inset_0_-1px_0_rgba(0,163,255,0.2)]"
+                  ? "md:bg-[#00A3FF]/15 md:shadow-[inset_0_1px_0_rgba(0,163,255,0.2),inset_0_-1px_0_rgba(0,163,255,0.2)]"
                   : ""
                   }`}
                 onClick={() => handleChatClick(item, index, "pin")}

@@ -3,7 +3,6 @@ import TabComponent from "../components/chakra-ui/Tab"
 import ChatAppIcon from "../icons/ChatApp"
 import { IoIosSearch } from "react-icons/io";
 import { IoIosAdd } from "react-icons/io";
-import { CiMenuKebab } from "react-icons/ci";
 import { data } from "../data";
 import AddContactModal from "./chakra-ui/Modal";
 import { useDisclosure } from '@chakra-ui/react'; // for modal
